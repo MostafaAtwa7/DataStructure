@@ -1,0 +1,46 @@
+    vector <int> v;
+    int x;
+    cout << "Enter the size of the additional elements : ";
+    cin >> x;
+    while (x--)
+    {
+        int s;
+        cin >> s;
+        v.push_back (s);
+    }
+    l.Insert_alternating (v);
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.odd_even ();
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    (l.palindrome ()) ? cout << "Palindrome !\n" : cout << "Not Palindrome !\n"; 
+    l.delete_odd_pos ();
+    l.print();
+    l.delete_key (5);
+    l.print ();
+    (l.search(4)) ? cout << "Found !\n" : cout << "Not found\n";
+    l.Bubble_sort();
+    l.print();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.rotate_ccw(1);
+    l.print();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.rotate_cw(2);
+    l.print();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    cout << l.middle_element() << '\n';
+    l.add(3 , 4);
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.pop_front();
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.pop_back();
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.delete_element(2);
+    l.print ();
+    cout << "Front = " << l.front () << " - " << "Back = " <<  l.back () << '\n';
+    l.reverse();
+    l.print();
